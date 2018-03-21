@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.genc4y10.firebaseinstagram.FirebaseInstagram">
+
+    <EditText
+        android:id="@+id/emailTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="@string/e_mail_gir"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="@string/sifre_gir"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/emailTextview"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextview" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="signIn"
+        android:text="Kayıt!"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextview"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextview" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signUp"
+        android:text="Giriş!"
+        app:layout_constraintBaseline_toBaselineOf="@+id/signInButton"
+        app:layout_constraintEnd_toEndOf="@+id/passwordTextview" />
+</android.support.constraint.ConstraintLayout>

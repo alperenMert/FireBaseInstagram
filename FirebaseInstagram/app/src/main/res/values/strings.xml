@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirebaseInstagram</string>
+    <string name="e_mail_gir">E-mail gir</string>
+    <string name="sifre_gir">Şifre gir</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
